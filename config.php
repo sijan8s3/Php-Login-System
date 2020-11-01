@@ -6,6 +6,11 @@ user: root
 password: blank("")
 
 */
+
+/*
+I'm kinda confused here. this supposed to be a secure login isn't it?
+Now, I have your db login creds. LOL!!
+*/
 define ('DB_SERVER', 'localhost');
 define ('DB_USERNAME', 'root');
 define ('DB_PASSWORD', '');
