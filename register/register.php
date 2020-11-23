@@ -1,8 +1,18 @@
 <?php
 //header.php
 include ('header.php');
-
 ?>
+
+<?php
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        require ('reg-process.php');
+    }
+?>
+
+<!----------*******..........     1:07:25          ...........************------------- -->
+
+
+
 <!--Regitration form -->
 <section id="register">
 

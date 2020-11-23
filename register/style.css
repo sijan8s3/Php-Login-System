@@ -6,7 +6,7 @@
     --color-border: #e5e5e5;
 }
 .font-ubuntu{
-    font: normal 500 16px var(--font-ubuntu);
+    font: small 500 16px var(--font-ubuntu);
 }
 
 #register{
@@ -31,7 +31,7 @@
     position: absolute;
     top: 0;
     z-index: 10;
-    width: 200px;
+    width: 150px;
     margin-top: 0px;
     opacity: 0;
 
@@ -44,8 +44,8 @@
 #upload-profile::before{
     content: '';
     display: inline-block;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     cursor: pointer;
     border-radius: 50px;
 }
@@ -53,7 +53,7 @@
 #register .upload-profile-image .camera-icon{
     position: absolute;
     top: 70px;
-    width: 60px !important;
+    width: 50px !important;
     filter: invert(30%) !important;
 }
 #register .upload-profile-image:hover .camera-icon{
