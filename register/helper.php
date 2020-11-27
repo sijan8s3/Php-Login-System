@@ -25,4 +25,29 @@ function validate_email($emailValue){
 }
 
 
+//profile image upload
+function upload_profile($fileName){
+    $targetDIR= "./assets/profile/";
+    $default = "beared.png";
+
+
+    //get the filename
+
+    $filename= basename($fileName['name']);
+    $targetFilePath = $targetDIR.$filename;
+
+    //get epension of file
+    $fileType= pathinfo($targetFilePath, PATHINFO_EXTENSION);
+
+    if(!empty($filename)){
+
+
+
+    1:44
+
+    }
+
+}
+
+
 ?>

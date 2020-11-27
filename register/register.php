@@ -13,13 +13,14 @@ include ('header.php');
 
 
 
+
 <!--Regitration form -->
 <section id="register">
 
     <div class="row m-0">
         <div class="col-lg-4 offset-lg-2">
 
-            <div class="text-center pb-5">
+            <div class="text-center pb-2">
                 <h1 class="login-title text-dark">Register</h1>
                 <p class="p-1 m-0 font-ubuntu text-black-50">Register and Enjoy additional features.</p>
                 <span class="font-ubuntu text-black-50">I already have <a href="login.php">Login</a> </span>
@@ -30,25 +31,25 @@ include ('header.php');
                     <div class="d-flex justify-content-center">
                         <img class="camera-icon" src="./assets/camera-solid.svg" alt="camera">
                     </div>
-                    <img class="img rounded-circle" src="./assets/profile/beard.png" style="width:200px; height:200px" alt="profile">
+                    <img class="img rounded-circle" src="./assets/profile/beard.png" style="width:150px; height:150px" alt="profile">
                     <small class="form-text text-black-50">Choose image</small>
-                    <input class="form-control-file" type="file" name="profileUpload" id="upload-profile">
+                    <input class="form-control-file" type="file" form="reg-form" name="profileUpload" id="upload-profile">
                 </div>
             </div>
             <div class="d-flex justify-content-center">
                 <form action="register.php" method="post" enctype="multipart/form-data" id="reg-form">
                     <div class="form-row">
                         <div class="col">
-                            <input type="text" name="firstName" id="firstName" placeholder="First Name" class="form-control">
+                            <input type="text" value="<?php if(isset($_POST['firstName'])) echo($_POST['firstName']);?>" name="firstName" id="firstName" placeholder="First Name" class="form-control">
                         </div>
                         <div class="col">
-                            <input type="text" name="lastName" id="lastName" placeholder="Last Name" class="form-control">
+                            <input type="text" value="<?php if(isset($_POST['lastName'])) echo($_POST['lastName']);?>" name="lastName" id="lastName" placeholder="Last Name" class="form-control">
                         </div>
                         
                     </div>
                     <div class="form-row my-4">
                     <div class="col">
-                            <input type="email" required name="email" id="email" placeholder="Email*" class="form-control">
+                            <input type="email" value="<?php if(isset($_POST['email'])) echo($_POST['email']);?>" required name="email" id="email" placeholder="Email*" class="form-control">
                         </div>
                     </div>
 
