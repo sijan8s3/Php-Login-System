@@ -91,7 +91,7 @@ $username_err = $password_err = $confirm_password_err = "";
             </label>
             </div>
         </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
+        <button type="button" class="btn btn-success">SignIN</button>
     </form>
     
     </div>
